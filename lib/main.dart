@@ -12,30 +12,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Lauryn First App',
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 58, 77, 183)),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 58, 77, 183),
+        ),
       ),
       home: const MyHomePage(title: 'Lauryn Home Page'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key, required this.title});
 
   final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,12 +34,12 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text(title),
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: .center,
-          children: [
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
             Text(
               'Hello, Lauryn!',
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
@@ -61,11 +50,6 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text('Welcome to Mobile Application Development!'),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }
