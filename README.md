@@ -1,17 +1,2 @@
-# my_first_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+What i learned: i learned how to better use vscode and its terminal for example the command to run the app with flutter(flutterb run) and the command to push my work on git hub .i also had a brief understanding on how to change colours and add or change text on my app code
+difficulties: running the app on the android immulator and pushing my modified work on github was kind of difficult 

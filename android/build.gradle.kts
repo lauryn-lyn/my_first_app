@@ -1,5 +1,8 @@
 allprojects {
     repositories {
+        flatDir {
+            dirs("C:/flutter_jars")
+        }
         google()
         mavenCentral()
     }
